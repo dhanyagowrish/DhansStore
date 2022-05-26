@@ -89,6 +89,7 @@ public class CartController {
     }
 
     // delete item from cart
+    @Transactional
     @DeleteMapping("/delete")
     public ResponseEntity<StandardResponse> deleteCartItem(@RequestBody DeleteItemFromCartRequestDTO deleteItemFromCartRequestDTO)
     {
